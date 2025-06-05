@@ -82,7 +82,7 @@ namespace RonnieTest.APIHandler
                 if (key.Contains("first") && key.Contains("name") && string.IsNullOrEmpty(firstName))
                     firstName = value;
 
-                if ((key.Contains("last") || key.Contains("maiden")) && key.Contains("name") && string.IsNullOrEmpty(lastName))
+                if (key.Contains("last")  && key.Contains("name") && string.IsNullOrEmpty(lastName))
                     lastName = value;
 
                 if (key.Contains("email") && string.IsNullOrEmpty(email))
